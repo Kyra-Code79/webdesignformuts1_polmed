@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e9e4e2;
+    
+  }
+  h1 { color: #7c795d; 
+    font-family: 'Trocchi', serif; 
+    font-size: 45px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 0; 
+}
+.subheader{
+    text-align: center;
+    margin-top: 20px;
+}
+h3,a{
+    color:#7c795d;
+    font-family: 'Trocchi', serif; 
+    font-weight: normal; 
+    line-height: 48px; 
+    font-size: 30px; 
+    margin: 0;
+    list-style-type:none;
+    text-decoration: none;
+}
+h3:hover{
+    cursor: pointer;
+}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #e7ded4;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #d69668;
+  }
+
+  li a.active {
+    background-color: #d69668;
+    color: white;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  .footer{
+    right: 0;
+    bottom: 0;
+		position: absolute;
+    margin-right: 100px;
+  }
+  label{
+    color: #d69668;
+  }
+  input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="date"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="tel"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      input[type="clear"] {
+        width: 80%;
+        background-color: #ff7900;
+        color: white;
+        padding: 7px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        align-items: center;
+      }
+      input[type="clear"]:hover {
+        background-color: #f3780c;
+      }
+
+      input[type="exit"] {
+        width: fit-content;
+        background-color: #f51313;
+        float: right;
+        clear: both;
+        color: white;
+        padding: 7px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+      }
+      input[type="exit"]:hover {
+        background-color: #e91111;
+      }
+
+      /*Options*/
+      .options {
+        transform: translateY(-50%);
+        color: #ddd;
+        font-family: "Open Sans", sans-serif;
+        margin-top: 10px;
+        text-align: left;
+      }
+      .options input {
+        display: none;
+      }
+      .options > label {
+        display: inline-block;
+        position: relative;
+        margin-right: 16px;
+        padding-left: 24px;
+        cursor: pointer;
+      }
+      .options > label:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        border: 1px solid #e9e4e2;
+        border-radius: 8px;
+      }
+      .options > label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 8px;
+        background: #d69668;
+        border-radius: 4px;
+        transition: 0.2s ease-in-out;
+      }
+      .options :checked + label:after {
+        height: 8px;
+        width: 8px;
+        margin-top: -4px;
+        left: 4px;
+      }
